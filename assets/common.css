@@ -1,0 +1,201 @@
+.bg-primary {
+    background: var(--blue);
+}
+
+.bg-danger {
+    background: var(--red);
+}
+
+.bg-warning {
+    background: var(--yellow);
+}
+
+.bg-orange {
+    background: var(--orange);
+}
+
+.bg-success {
+    background: var(--green);
+}
+
+.bg-info {
+    background: var(--light-blue);
+}
+
+.text-primary {
+    color: var(--blue);
+}
+
+.text-danger {
+    color: var(--red);
+}
+
+.text-warning {
+    color: var(--yellow);
+}
+
+.text-success {
+    color: var(--green);
+}
+
+.text-info {
+    color: var(--light-blue);
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+/* Responsive Grid */
+.col-12 {
+    width: 100% ;
+}
+
+.col-6 {
+    width: calc(50% - 16px);
+}
+
+.col-4 {
+    width: calc(25% - 16px);
+}
+
+.col-3 {
+    width: calc(33.33% - 16px);
+}
+
+.col-2 {
+    width: calc(16.66% - 16px);
+}
+
+.col-1 {
+    width: calc(8.33% - 16px);
+}
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+} */
+
+/* margin */
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+/* padding */
+.p-16 {
+    padding: 16px;
+}
+
+.p-24 {
+    padding: 24px;
+}
+
+.p-32 {
+    padding: 32px;
+}
+
+/* form */
+/* .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form-group textarea {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--gray);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form-group select {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--gray);
+    font-size: 16px;
+}
+
+.form-group button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--gray);
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.form-group button:hover {
+    background: var(--blue);
+    color: var(--light);
+}
+
+.form-group input[type="file"] {
+    padding: 0;
+    border: none;
+}
+
+.form-group input[type="file"]::file-selector-button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--gray);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group input[type="file"]::file-selector-button:hover {
+    background: var(--blue);
+    color: var(--light);
+} */
+
+
+/* table */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* background */
+.bg-light {
+    background: var(--light);
+}
+
+.bg-white {
+    background: var(--white);
+}
+
+
+/* border */
+.border {
+    border: 1px solid var(--gray);
+}
+
+/* card */
+.card {
+    padding: 24px;
+    border-radius: 20px;
+    background: var(--light);
+}

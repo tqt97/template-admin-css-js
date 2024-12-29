@@ -1,0 +1,108 @@
+.data-table {
+    /* flex-grow: 1; */
+    /* flex-basis: 500px; */
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+}
+
+.data-table .head {
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    margin-bottom: 24px;
+}
+
+.data-table .head h3 {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* .data-table .head .bx {
+    cursor: pointer;
+} */
+
+.data-table label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid transparent; */
+    /* border-radius: 15px; */
+    outline: none;
+}
+
+.data-table input {
+    /* width: 100%; */
+    padding: 5px 30px 5px 10px;
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    border: 1px solid var(--dark-grey);
+    /* padding-left: 10px; */
+    border-radius: 30px;
+}
+
+.data-table label .bx {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* margin-right: 5px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.data-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table table th {
+    padding-bottom: 12px;
+    font-size: 13px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+}
+
+.data-table table td {
+    padding: 16px 0;
+}
+
+.data-table table tr td:first-child {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    padding-left: 6px;
+}
+
+.data-table table td img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.data-table table tbody tr:hover {
+    background: var(--grey);
+}
+
+.data-table table tr td .status {
+    font-size: 10px;
+    padding: 6px 16px;
+    color: var(--light);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+/* .data-table table tr td .status.completed {
+	background: var(--blue);
+}
+.data-table table tr td .status.process {
+	background: var(--yellow);
+}
+.data-table table tr td .status.pending {
+	background: var(--orange);
+} */
