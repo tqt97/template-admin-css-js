@@ -1,9 +1,14 @@
 /* CONTENT */
 #content {
 	position: relative;
-	width: calc(100% - 280px);
-	left: 280px;
+	width: calc(100% - 220px);
+	left: 220px;
 	transition: .3s ease;
+}
+
+body.hide #content {
+	width: calc(100% - 60px);
+	left: 60px;
 }
 
 /* NAV */
@@ -113,8 +118,8 @@
 }
 
 #content nav .profile img {
-	width: 36px;
-	height: 36px;
+	width: 24.8px;
+	height: 24.8px;
 	object-fit: cover;
 	border-radius: 50%;
 }

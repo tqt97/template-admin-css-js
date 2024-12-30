@@ -1,63 +1,34 @@
-/* General Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Form Container */
-/* .form-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
-} */
-
-/* Form Title */
 .form-title {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    /* color: var(--blue); */
+    font-family: var(--lato);
+    font-weight: 600;
+    margin-bottom: 24px;
 }
 
-/* Row */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-/* Columns */
-.col {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+form input::placeholder {
+    /* color: #999; */
+    font-size: 14px;
+    font-family: --var(--lato);
 }
 
 .text-center {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 /* Form Labels */
 .form-label {
     display: block;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 5px;
-    color: #555;
+    /* color: #555; */
+    font-family: var(--lato);
 }
 
 /* Form Controls */

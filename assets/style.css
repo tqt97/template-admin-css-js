@@ -17,13 +17,10 @@ li {
 :root {
 	--poppins: 'Poppins', sans-serif;
 	--lato: 'Lato', sans-serif;
-
-	--light: #F9F9F9;
+	--light: #fff;
 	--blue: #2563EB;
-	/* --blue: #007bff; */
-	/* --blue: #3C91E6; */
 	--light-blue: #CFE8FF;
-	--grey: #eee;
+	--grey: #f4f4f4;
 	--dark-grey: #AAAAAA;
 	--dark: #342E37;
 	--red: #DC2626;
@@ -36,10 +33,10 @@ li {
 	--green: #10B981;
 	/* add new */
 	--color-primary: #2563EB;
-    --color-warning: #F59E0B;
-    --color-error: #DC2626;
-    --color-info: #3B82F6;
-    --color-success: #10B981;
+	--color-warning: #F59E0B;
+	--color-error: #DC2626;
+	--color-info: #3B82F6;
+	--color-success: #10B981;
 }
 
 html {
@@ -47,19 +44,91 @@ html {
 }
 
 body.dark {
-	--light: #0C0C1E;
-	--grey: #060714;
+	--light: #0a0a3d;
+	--grey: #0d0f51;
 	--dark: #FBFBFB;
 }
 
 body {
 	background: var(--grey);
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 
-/* MAIN */
+.dropdown-wrapper {
+	position: relative;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 150px;
+	/* border-radius: 10px; */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	list-style: none;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(50px);
+	transition:
+		opacity 0.3s ease,
+		transform 0.3s ease,
+		visibility 0.3s ease;
+	z-index: 1000;
+	/* border-left: 5px solid var(--white); */
+	/* border-right: 5px solid var(--white); */
+	border-radius: 10px;
+	overflow: hidden;
+}
 
 
+.dropdown-wrapper.active .dropdown, .dropdown-wrapper:hover .dropdown-menu {
+	opacity: 1;
+	visibility: visible;
+	/* border-radius: 10px; */
+	transform: translateY(0px);
+}
 
-/* Footer */
+.dropdown li {
+	position: relative;
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid var(--grey);
+	border-left: 5px solid #fff;
+	transition: all 0.3s ease;
+
+}
+
+.dropdown li:first-child {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.dropdown li:last-child {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.dropdown li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+	padding: 10px;
+	background: var(--light);
+	color: var(--blue);
+	display: block;
+	z-index: 1000;
+
+}
+
+.dropdown li:hover {
+	border-left: 5px solid var(--blue);
+}
+
+.dropdown li:hover a {
+	color: var(--blue) !important;
+	background: var(--white)
+}

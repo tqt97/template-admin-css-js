@@ -4,6 +4,11 @@
 		width: 200px;
 	}
 
+	/* #sidebar .side-menu li a {
+		width: calc(48px - (4px * 2));
+		transition: width .3s ease;
+	} */
+
 	#content {
 		width: calc(100% - 60px);
 		left: 200px;
