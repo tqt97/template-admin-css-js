@@ -1,104 +1,105 @@
 .data-table {
-    border-radius: 20px;
-    background: var(--light);
-    padding: 24px;
-    overflow: hidden;
+  border-radius: 20px;
+  background: var(--light);
+  padding: 24px;
+  overflow: hidden;
 }
 
 .data-table .table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    /* scrollbar-color: var(--blue) var(--light); */
-    border-collapse: collapse;
-    white-space: nowrap;
-    position: relative;
-    min-width: 600px;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  /* scrollbar-color: var(--blue) var(--light); */
+  border-collapse: collapse;
+  white-space: nowrap;
+  position: relative;
+  min-width: 600px;
 }
 
 .data-table .head {
-    display: flex;
-    align-items: center;
-    grid-gap: 16px;
-    margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+  margin-bottom: 24px;
 }
 
 .data-table .head h3 {
-    margin-right: auto;
-    font-size: 20px;
-    font-weight: 600;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .data-table label {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
 }
 
 .data-table input {
-    /* width: 100%; */
-    padding: 5px 30px 5px 10px;
-    height: 36px;
-    line-height: 36px;
-    outline: none;
-    border: 1px solid var(--dark-grey);
-    /* padding-left: 10px; */
-    border-radius: 30px;
+  /* width: 100%; */
+  padding: 5px 30px 5px 10px;
+  height: 36px;
+  line-height: 36px;
+  outline: none;
+  border: 1px solid var(--dark-grey);
+  /* padding-left: 10px; */
+  border-radius: 30px;
 }
 
 .data-table label .bx {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .data-table table th {
-    padding-bottom: 12px;
-    font-size: 13px;
-    text-align: left;
-    border-bottom: 1px solid var(--grey);
+  padding-bottom: 12px;
+  font-size: 13px;
+  text-align: left;
+  border-bottom: 1px solid var(--grey);
 }
 
 .data-table table td {
-    padding: 16px 10px;
+  padding: 16px 10px;
 }
 
 .data-table table tr td:first-child {
-    display: flex;
-    align-items: center;
-    grid-gap: 12px;
-    padding-left: 6px;
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+  padding-left: 6px;
 }
 
-.data-table table td img, .data-table table td .image {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
+.data-table table td img,
+.data-table table td .image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .data-table table tbody tr:hover {
-    color: var(--dark-grey);
-    cursor: pointer;
+  color: var(--dark-grey);
+  cursor: pointer;
 }
 
 .data-table table tr td .status {
-    font-size: 10px;
-    padding: 6px 16px;
-    color: var(--light);
-    border-radius: 20px;
-    font-weight: 700;
+  font-size: 10px;
+  padding: 6px 16px;
+  color: var(--light);
+  border-radius: 20px;
+  font-weight: 700;
 }
 
 /* Make the first few columns sticky */
 th:first-child,
 td:first-child {
-    position: sticky;
-    left: 0;
-    background: #f9f9f9;
-    z-index: 2;
+  position: sticky;
+  left: 0;
+  background: #f9f9f9;
+  z-index: 2;
 }
 
 /* th:nth-child(2),
@@ -109,163 +110,165 @@ td:nth-child(2) {
     z-index: 2;
 } */
 
-
 /* Add responsiveness */
 @media (max-width: 768px) {
-    table {
-        min-width: 400px;
-    }
+  table {
+    min-width: 400px;
+  }
 }
-
 
 /* Base styles for the pagination */
 .pagination {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    list-style: none;
-    padding: 10px;
-    margin: 10px 0;
-    gap: 8px;
-    /* border-top: 1px solid #ccc; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0;
+  gap: 8px;
+  /* border-top: 1px solid #ccc; */
 }
 
 /* Link styles */
 .pagination a {
-    display: inline-block;
-    padding: 6px 12px;
-    text-decoration: none;
-    font-size: 14px;
-    color: var(--blue);
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--blue);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Hover effect */
 .pagination a:hover {
-    background-color: var(--blue);
-    color: #fff;
+  background-color: var(--blue);
+  color: #fff;
 }
 
 /* Active page */
 .pagination a.active {
-    background-color: var(--blue);
-    color: #fff;
-    border-color: var(--blue);
-    pointer-events: none;
+  background-color: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+  pointer-events: none;
 }
 
 /* Disabled states (optional) */
 .pagination a.prev,
 .pagination a.next {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .pagination a.disabled {
-    color: #ccc;
-    pointer-events: none;
-    border-color: #eee;
+  color: #ccc;
+  pointer-events: none;
+  border-color: #eee;
 }
 
 /* select qty page items */
 .pagination-controls {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    margin-bottom: 20px;
-    /* padding: 10px 20px; */
-    background-color: #f8f9fa;
-    /* Nhẹ nhàng */
-    /* border: 1px solid #ddd; */
-    border-radius: 8px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    /* width: 300px; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 20px;
+  /* padding: 10px 20px; */
+  background-color: #f8f9fa;
+  /* Nhẹ nhàng */
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* width: 300px; */
 }
 
 /* Label styles */
 .pagination-controls label {
-    font-size: 12px;
-    font-weight: 500;
-    color: #555;
-    margin-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  margin-right: 10px;
 }
 
 /* Select dropdown styles */
 .pagination-controls select {
-    padding: 6px 12px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-    transition: border-color 0.3s, box-shadow 0.3s;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
 }
 
 .pagination-controls select:hover {
-    border-color: #007bff;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
 }
 
 .pagination-controls select:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 6px rgba(0, 123, 255, 0.7);
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.7);
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .pagination-controls {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+  .pagination-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    .pagination-controls label {
-        margin-right: 0;
-    }
+  .pagination-controls label {
+    margin-right: 0;
+  }
 }
 
 /* General styles for the filter inputs */
 .filter-wrapper .filter-label {
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    color: #555;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 5px;
 }
 
 .filter-wrapper .filter-input {
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #fff;
-    transition: border-color 0.3s;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s;
 }
 
 .filter-wrapper .filter-input:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
 }
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-    .col-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 
-    .row {
-        margin-left: -5px;
-        margin-right: -5px;
-    }
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
 
-    .col {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  .col {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

@@ -1,207 +1,205 @@
 .form-title {
-    /* text-align: center; */
-    margin-bottom: 20px;
-    font-size: 24px;
-    /* color: var(--blue); */
-    font-family: var(--lato);
-    font-weight: 600;
-    margin-bottom: 24px;
+  /* text-align: center; */
+  margin-bottom: 20px;
+  font-size: 24px;
+  /* color: var(--blue); */
+  font-family: var(--lato);
+  font-weight: 600;
+  margin-bottom: 24px;
 }
 
 form input::placeholder {
-    /* color: #999; */
-    font-size: 14px;
-    font-family: --var(--lato);
+  /* color: #999; */
+  font-size: 14px;
+  font-family: --var(--lato);
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 /* Form Labels */
 .form-label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-    /* color: #555; */
-    font-family: var(--lato);
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  /* color: #555; */
+  font-family: var(--lato);
 }
 
 /* Form Controls */
 .form-control {
-    width: 100%;
-    padding: 10px 15px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .form-control:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 /* Radio Buttons */
 .form-radio-group {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    height: 40px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: 40px;
 }
 
 .form-radio {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
 }
 
 /* Color Picker */
 .form-control-color {
-    height: 40px;
-    width: 60px;
-    border: none;
-    cursor: pointer;
+  height: 40px;
+  width: 60px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Range Slider */
 .form-control-range {
-    width: 100%;
-    margin-top: 10px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* Button */
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-
-
 
 /* Add more styles as needed */
 /* Radio Button Group */
 .custom-radio,
 .custom-checkbox {
-    display: flex;
-    align-items: center;
-    /* margin-bottom: 10px; */
-    cursor: pointer;
-    font-size: 16px;
-    color: #555;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+  height: 100%;
 }
 
 .custom-radio input[type="radio"],
 .custom-checkbox input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 .custom-radio span,
 .custom-checkbox span {
-    position: relative;
-    padding-left: 35px;
-    line-height: 40px;
+  position: relative;
+  padding-left: 35px;
+  line-height: 40px;
 }
 
 .custom-radio span::before,
 .custom-checkbox span::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 8px;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 50%; /* Circular for radio */
-    background-color: #fff;
-    transition: all 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Circular for radio */
+  background-color: #fff;
+  transition: all 0.3s;
 }
 
 .custom-checkbox span::before {
-    border-radius: 4px; /* Square for checkbox */
+  border-radius: 4px; /* Square for checkbox */
 }
 
 .custom-radio input[type="radio"]:checked + span::before,
 .custom-checkbox input[type="checkbox"]:checked + span::before {
-    background-color: #007bff;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  background-color: #007bff;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .custom-radio span::after {
-    content: '';
-    position: absolute;
-    left: 8px;
-    top: 16px;
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    border-radius: 50%; /* Circular for radio */
-    transform: scale(0);
-    transition: all 0.3s;
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%; /* Circular for radio */
+  transform: scale(0);
+  transition: all 0.3s;
 }
 
 .custom-checkbox span::after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 14px;
-    width: 6px;
-    height: 6px;
-    background-color: #fff;
-    border-radius: 50%; /* Circular for radio */
-    transform: scale(0);
-    transition: all 0.3s;
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%; /* Circular for radio */
+  transform: scale(0);
+  transition: all 0.3s;
 }
 
 .custom-checkbox span::after {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px; /* Square for checkbox */
-    transform: rotate(45deg) scale(0);
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px; /* Square for checkbox */
+  transform: rotate(45deg) scale(0);
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
 }
 
 .custom-radio input[type="radio"]:checked + span::after,
 .custom-checkbox input[type="checkbox"]:checked + span::after {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 /* Button */
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }

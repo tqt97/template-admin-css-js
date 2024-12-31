@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "prettier-watch": "onchange \"**/*\" -- prettier --write {{changed}}"
+  },
+  "devDependencies": {
+    "prettier": "3.4.2"
+  }
+}

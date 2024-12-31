@@ -1,160 +1,158 @@
 /* Background */
 .bg-primary {
-    background: var(--blue);
+  background: var(--blue);
 }
 
 .bg-danger {
-    background: var(--red);
+  background: var(--red);
 }
 
 .bg-warning {
-    background: var(--yellow);
+  background: var(--yellow);
 }
 
 .bg-orange {
-    background: var(--orange);
+  background: var(--orange);
 }
 
 .bg-success {
-    background: var(--green);
+  background: var(--green);
 }
 
 .bg-info {
-    background: var(--light-blue);
+  background: var(--light-blue);
 }
 
 .text-primary {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .text-danger {
-    color: var(--red);
+  color: var(--red);
 }
 
 .text-warning {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .text-success {
-    color: var(--green);
+  color: var(--green);
 }
 
 .text-info {
-    color: var(--light-blue);
+  color: var(--light-blue);
 }
 
 /* Margin */
 .ml-1 {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 .ml-2 {
-    margin-left: 16px; 
+  margin-left: 16px;
 }
 .mt-24 {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .mx-1 {
-    margin-left: 4px;
-    margin-right: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 /* Responsive Grid */
 /* Row */
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 /* Columns */
 .col {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 
 .col-4 {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
 }
 
 .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .mt-16 {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .mt-24 {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .mt-32 {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 .mb-16 {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 /* padding */
 .p-16 {
-    padding: 16px;
+  padding: 16px;
 }
 
 .p-24 {
-    padding: 24px;
+  padding: 24px;
 }
 
 .p-32 {
-    padding: 32px;
+  padding: 32px;
 }
 
 /* background */
 .bg-light {
-    background: var(--light);
+  background: var(--light);
 }
 
 .bg-white {
-    background: var(--white);
+  background: var(--white);
 }
-
 
 /* card */
 .card {
-    padding: 24px;
-    border-radius: 20px;
-    background: var(--light);
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--light);
 }
 
-
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text-red {
-    color: var(--red);
+  color: var(--red);
 }
 
 .text-blue {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .text-grey {
-    color: var(--dark-grey);
+  color: var(--dark-grey);
 }
