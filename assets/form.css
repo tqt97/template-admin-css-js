@@ -9,7 +9,6 @@
 }
 
 form input::placeholder {
-  /* color: #999; */
   font-size: 14px;
   font-family: --var(--lato);
 }
@@ -130,13 +129,15 @@ form input::placeholder {
   width: 20px;
   height: 20px;
   border: 2px solid #ccc;
-  border-radius: 50%; /* Circular for radio */
+  border-radius: 50%;
+  /* Circular for radio */
   background-color: #fff;
   transition: all 0.3s;
 }
 
 .custom-checkbox span::before {
-  border-radius: 4px; /* Square for checkbox */
+  border-radius: 4px;
+  /* Square for checkbox */
 }
 
 .custom-radio input[type="radio"]:checked + span::before,
@@ -154,7 +155,8 @@ form input::placeholder {
   width: 8px;
   height: 8px;
   background-color: #fff;
-  border-radius: 50%; /* Circular for radio */
+  border-radius: 50%;
+  /* Circular for radio */
   transform: scale(0);
   transition: all 0.3s;
 }
@@ -167,7 +169,8 @@ form input::placeholder {
   width: 6px;
   height: 6px;
   background-color: #fff;
-  border-radius: 50%; /* Circular for radio */
+  border-radius: 50%;
+  /* Circular for radio */
   transform: scale(0);
   transition: all 0.3s;
 }
@@ -175,7 +178,8 @@ form input::placeholder {
 .custom-checkbox span::after {
   width: 10px;
   height: 10px;
-  border-radius: 2px; /* Square for checkbox */
+  border-radius: 2px;
+  /* Square for checkbox */
   transform: rotate(45deg) scale(0);
   border: solid #fff;
   border-width: 0 2px 2px 0;

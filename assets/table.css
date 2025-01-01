@@ -98,7 +98,7 @@ th:first-child,
 td:first-child {
   position: sticky;
   left: 0;
-  background: #f9f9f9;
+  background: #fff;
   z-index: 2;
 }
 
